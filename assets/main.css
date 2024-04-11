@@ -1,0 +1,87 @@
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    position: relative;
+}
+
+@import url('https://fonts.cdnfonts.com/css/running-wolf');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+hr {
+    width: 300px;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    color: #ff0000;
+}
+
+a {
+    font-family: 'Running Wolf', sans-serif;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    margin-right: 11px;
+    font-size: 30px;
+}
+.container pre {
+    text-shadow: 0 0 10px #490000, 0 0 20px #640000;
+    color: #ff0000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: none;
+    font-size: 10px;   
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  position: relative;
+}
+.line {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: red;
+  animation: animateLine 5s linear infinite;
+  pointer-events: none; 
+  box-sizing: border-box;
+}
+
+@keyframes animateLine {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: calc(100% - 100px); 
+    left: 100px; 
+  }
+  100% {
+    width: 0;
+    left: calc(100% - 100px); 
+  }
+}
+
+  @keyframes animateLine {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: calc(100% - 100px);
+    left: 100px; 
+  }
+  100% {
+    width: 0;
+    left: calc(100% - 100px); 
+  }
+}
