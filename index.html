@@ -3,68 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ruin</title>
-    <link rel="stylesheet" href="assets/main.css">
-    <link href="https://fonts.cdnfonts.com/css/running-wolf" rel="stylesheet">
+    <title>HARM LOGIN PANEL</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/2e/13/8a/2e138a924dbf18cac19de54aa12eeaad.jpg" type="image/x-icon">
+    <style>
+        @keyframes rainbowText {
+            0% { color: red; }
+            10% { color: orange; }
+            20% { color: yellow; }
+            30% { color: green; }
+            40% { color: blue; }
+            50% { color: indigo; }
+            60% { color: violet; }
+            100% { color: red; }
+        }
+        body {
+            background-color: black;
+            animation: fadeIn 1s ease-in;
+        }
+        .loginBox {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 200px;
+            text-align: center;
+        }
+        .loginBox h1 {
+            animation: rainbowText 10s infinite;
+        }
+        .loginBox input[type="text"], .loginBox input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+        .loginBox input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .loginBox input[type="submit"]:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .hint {
+            font-size: 12px;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="line"></div>
-    <div class="container">
-        <a href="assets/hm.html">Honorable Mentions</a>
-        <a href="assets/hoa.html"> Hall of Autism</a>
-        <pre>
-██╗   ██╗██████╗     ██╗  ██╗██╗   ██╗██████╗     ██████╗ 
-██║   ██║██╔══██╗    ██║  ██║██║   ██║██╔══██╗    ╚════██╗
-██║   ██║██║  ██║    ███████║██║   ██║██████╔╝     █████╔╝
-██║   ██║██║  ██║    ██╔══██║██║   ██║██╔══██╗    ██╔═══╝ 
-╚██████╔╝██████╔╝    ██║  ██║╚██████╔╝██████╔╝    ███████╗
- ╚═════╝ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝     ╚══════╝
-                                                             
-                  
-            ;               ,           
-            ,;                 '.         
-           ;:                   :;        
-          ::                     ::       
-          ::                     ::       
-          ':                     :        
-           :.                    :        
-        ;' ::                   ::  '     
-       .'  ';                   ;'  '.    
-      ::    :;                 ;:    ::   
-      ;      :;.             ,;:     ::   
-      :;      :;:           ,;"      ::   
-      ::.      ':;  ..,.;  ;:'     ,.;:   
-       "'"...   '::,::::: ;:   .;.;""'    
-           '"""....;:::::;,;.;"""         
-       .:::.....'"':::::::'",...;::::;.   
-      ;:' '""'"";.,;:::::;.'""""""  ':;   
-     ::'         ;::;:::;::..         :;  
-    ::         ,;:::::::::::;:..       :: 
-    ;'     ,;;:;::::::::::::::;";..    ':.
-   ::     ;:"  ::::::"""'::::::  ":     ::
-    :.    ::   ::::::;  :::::::   :     ; 
-     ;    ::   :::::::  :::::::   :    ;  
-      '   ::   ::::::....:::::'  ,:   '   
-       '  ::    :::::::::::::"   ::       
-          ::     ':::::::::"'    ::       
-          ':       """""""'      ::       
-           ::        gig         ;:        
-           ':;      Shade       ;:"        
-             ';     zareu     ,;'          
-               "'  Vil ian   '"  
-                   chauncy
-                    rifle
-
-                   &nbsp;
-                   &nbsp;
-
-            
-        </pre> 
-        <hr>
+    <div class="loginBox">
+        <h1>Login</h1>
+        <form action="x.html">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+        <div class="hint">Hint: egoist for user and password</div>
     </div>
-    <audio autoplay>
-        <source src="assets/HomeMusic.mp3" type="audio/ogg">
-        <source src="assets/HomeMusic.mp3" type="audio/mpeg">
+        <audio autoplay>
+        <source src="HoaTunes.mp3" type="audio/ogg">
+        <source src="HoaTunes.mp3" type="audio/mpeg">
       </audio> 
 </body>
 </html>
